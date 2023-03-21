@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hypershift-azjx
+  namespace: red-hat-acm-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5fa7bfd434708b6b64866d3269879a404fdec58e62a88078a7abf2f30ba65bd3
+        name: container-image
+        resources: {}
+status: {}
