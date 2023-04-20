@@ -12,6 +12,7 @@ metadata:
   namespace: red-hat-acm-tenant
 spec:
   replicas: 1
+  revisionHistoryLimit: 0
   selector:
     matchLabels:
       app.kubernetes.io/instance: hypershift-azjx
@@ -23,7 +24,7 @@ spec:
         app.kubernetes.io/instance: hypershift-azjx
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:99892b73593712f46cc2512d24f460957ca32e37b36d79ff8d29f3184ce51ecd
+      - image: quay.io/redhat-appstudio/user-workload@sha256:a42b7c4f87ed1d51e4e4025ad37068dd612702a56b813154ecc5a6e446e5daec
         imagePullPolicy: Always
         name: container-image
         ports:
