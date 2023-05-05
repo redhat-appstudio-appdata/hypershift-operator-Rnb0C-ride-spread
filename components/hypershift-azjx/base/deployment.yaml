@@ -24,7 +24,7 @@ spec:
         app.kubernetes.io/instance: hypershift-azjx
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload@sha256:99892b73593712f46cc2512d24f460957ca32e37b36d79ff8d29f3184ce51ecd
+      - image: quay.io/redhat-appstudio/user-workload@sha256:5fa7bfd434708b6b64866d3269879a404fdec58e62a88078a7abf2f30ba65bd3
         imagePullPolicy: Always
         name: container-image
         ports:
