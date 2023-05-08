@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   name: hypershift-azjx
-  namespace: red-hat-acm-tenant
 spec:
   replicas: 1
   selector: {}
