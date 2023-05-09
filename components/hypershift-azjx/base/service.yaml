@@ -9,7 +9,6 @@ metadata:
     app.kubernetes.io/name: hypershift-azjx
     app.kubernetes.io/part-of: hypershift-operator
   name: hypershift-azjx
-  namespace: red-hat-acm-tenant
 spec:
   ports:
   - port: 8080
